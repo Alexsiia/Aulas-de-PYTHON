@@ -1,0 +1,32 @@
+n=0
+candidatos=0
+apto=0
+napto=0
+continuar=0
+
+
+
+while(continuar!="N"):
+    nome=input("Digite o seu nome: ")
+    idade=int(input("Digite a sua idade: "))
+    sexo=input("Digite o seu sexo(F ou M): ")
+    saude=input("Digite como esta sua saude atualmente(B ou R): ")
+
+    if(sexo.upper()=="M"):
+       if(idade>=18):
+           if(saude.upper()=="B"):
+               print(f"O candidato {nome} está adpto para servir!")
+               apto+=1
+           else:
+               print(f"O candidato {nome} não esta adpto pois não é do sexo masculino")
+               napto+=1
+       else:
+           print(f"O candidato {nome}não esta adpto pois é menor de 18 anos")
+           napto+=1
+    else:
+        print(f"O candidato {nome} não esta apto pois é do sexo feminino")
+        napto+=1
+continuar=input("Deseja continuar(S ou N): ")
+
+print(f"Total de aptos para o alistamento é {apto}")  
+print(f"Total de candidatos não aptos para o alistamento é {napto}")                 
