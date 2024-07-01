@@ -1,0 +1,14 @@
+vet=[0]*6
+cont=0
+
+for cont in range(6):
+    vet[cont]=int(input(f"Insira valores positivos ou negativos: "))
+
+print ("Antes da troca:",vet)
+
+for cont in range(6):
+    if vet[cont]>=0:
+        vet[cont] =1
+    else:
+        vet[cont]=0
+print("Após a troca: ",vet)    
