@@ -1,0 +1,11 @@
+'''
+Faça uma função que informe a quantidade de 
+dígitos de uma determinada frase informada.
+'''
+
+def contador(x):
+    return len(str(x))
+
+
+resultado = contador("Itaquaquicetuba")
+print(f"Quantidade de letras: {resultado}")
