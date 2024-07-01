@@ -1,0 +1,27 @@
+salario=0
+filhos=0
+numero=0
+continuar=0
+
+while(continuar!="N"):
+    salario=int(input("Digite o seu salario: "))
+    filhos=int(input("Digite quantos filhos voce tem: "))
+
+    somasal+=salario
+    tfilhos+=filhos
+    qdecad+=1
+
+    if(salario>somasal):
+        maiorsalario=salario
+
+    if(salario<=100):
+        qde100+=1
+
+    m_desalario= somasal/qdecad
+    m_defilhos=tfilhos/qdecad
+    p100=qde100/qdecad*100
+    continuar=input("Digite se quer continuar(s-n): ")
+
+print(f"{p100}% pessoas recebem salarios de R$100,00")
+print(f"A media de filhos da população é de {m_desalario}")
+print(f"A media de salario da população é de {m_salario}")
