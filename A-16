@@ -1,0 +1,16 @@
+cont=0
+vet=[0]*6
+
+for cont in range(0,6,1):
+    vet[cont]=int(input(f"Informe o número na posição {cont}: "))
+
+for cont in range(6): 
+
+    if vet[cont]>10 :
+        num2=int(input(f"Informe o número na posição {cont}: "))
+        print(vet[cont]-num2)
+
+    elif vet[cont]<0:
+       print(vet[cont]* -1) 
+    else:
+        print(vet[cont]/5.0)
