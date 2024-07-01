@@ -1,0 +1,25 @@
+class ColorAssistant:
+    def __init__(self):
+        self.color_info = {
+            "vermelho": "O vermelho é uma cor primária que simboliza paixão e energia.",
+            "azul": "O azul é a cor do céu e do oceano, muitas vezes associada à calma e estabilidade.",
+            "verde": "O verde é a cor da natureza, frequentemente relacionada à harmonia e ao crescimento.",
+            "amarelo": "O amarelo é uma cor brilhante que evoca alegria e otimismo.",
+            "roxo": "O roxo é uma cor que simboliza a realeza e a criatividade.",
+            "laranja": "O laranja é uma cor vibrante que sugere entusiasmo e vitalidade.",
+            "rosa": "O rosa é uma cor suave associada à delicadeza e à feminilidade."
+        }
+
+    def get_color_info(self, color):
+        return self.color_info.get(color.lower(), "Desculpe, não tenho informações sobre essa cor.")
+
+if __name__ == "__main__":
+    assistant = ColorAssistant()
+    while True:
+        user_input = input("Qual cor você gostaria de saber mais? (Digite 'sair' para sair) ").strip()
+        if user_input.lower() == "sair":
+            print("Até logo!")
+            break
+        else:
+            info = assistant.get_color_info(user_input)
+            print(info)
