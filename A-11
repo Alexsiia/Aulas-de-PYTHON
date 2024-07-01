@@ -1,0 +1,42 @@
+'''
+Desenvolver um algoritmo que solicite o nome e a
+idade de um nadador e imprima na tela o seu nome,
+a sua idade e em qual categoria ele está.
+    idade                 cat
+    5 a 7                 Infantil A
+    8 a 11                Infantil B
+    12 a 13               Juvenil A
+    14 a 17               Juvenil B
+    18 a >                Adulto
+Caso seja digitado uma idade fora das classes acima,
+informar que o nadador não possui uma categoria válida.
+
+'''
+
+nn = ""
+cat = ""
+ina = 0
+
+nn = input("Digite o nome do nadador: ")
+ina = int(input("Digite a idade do nadador: "))
+
+if((ina >= 5) and (ina <= 7)):
+        cat = "A cat do Nadador é: Infantil A"
+else:
+    if((ina >= 8) and (ina <= 11)):
+        cat = "A cat do Nadador é: Infantil B"
+    else:
+        if((ina >= 12) and (ina <= 13)):
+            cat = "A cat do Nadador é: Juvenil A"
+        else:
+            if((ina >= 14) and (ina <= 17)):
+                cat = "A cat do Nadador é: Juvenil B"
+            else:
+                if(ina >= 18):
+                    cat = "A cat do Nadador é: Adulto"
+                else:
+                    cat = "O Nadador não possui uma cat Válida para a sua idade"
+
+print(f"O nome do nadador é: {nn}")
+print(f"A idade do nadador é: {ina}")
+print(cat)
