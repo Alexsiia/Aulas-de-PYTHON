@@ -1,0 +1,46 @@
+canal_9=0
+canal_12=0
+canal_23=0
+canal_40=0
+canal=0
+outros=0
+contador=0
+p_c9=0
+n=0
+
+canal=1
+while(canal!=0):
+    canal=int(input("Informe qual dos canais quer: "))
+
+    if(canal==9):
+        canal_9 += 1
+        contador+=1
+    else:
+        if(canal==12):
+            canal_12+=1
+            contador+=1
+        else:
+            if(canal==23):
+                canal_23+=1
+                contador+=1
+            else:
+                if(canal==40):
+                    canal_40+=1
+                    contador+=1
+                else:
+                    if(canal!=0):
+                        outros+=1
+                        contador+=1
+if(contador != 0):
+    p_c9=(canal_9*100)/contador
+    p_c12=(canal_12*100)/contador
+    p_c23=(canal_23*100)/contador
+    p_c40=(canal_40*100)/contador
+    p_outros=(outros*100)/contador
+
+print(f"A porcentagem de escolha do canal 9 foi:{p_c9:,.2f} ")
+print(f"A porcentagem de escolha do canal 12 foi:{p_c12:,.2f} ")
+print(f"A porcentagem de escolha do canal 23 foi:{p_c23:,.2f} ")
+print(f"A porcentagem de escolha do canal 40 foi:{p_c40:,.2f} ")
+print(f"A porcentagem de escolha de outros canais foi:{p_outros:,.2f}")
+
