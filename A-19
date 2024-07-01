@@ -1,0 +1,13 @@
+linha=0
+coluna=0
+
+mat=[[0]*4,[0]*4,[0]*4]
+
+for linha in range(0,4,1):
+    for coluna in range(0,4,1):
+        mat[linha][coluna]=int(input(f"Insira o numero para posiçãona linha {linha} e coluna {coluna}: "))
+
+for linha in range(0,4,1):
+    for coluna in range(0,4,1):
+        print(f"[{mat [linha] [coluna]}]",end='')
+    print()
