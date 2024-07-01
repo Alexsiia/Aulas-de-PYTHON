@@ -1,0 +1,22 @@
+qde_mulheres=0
+qde_maiores=0
+soma_idade=0
+
+for contador in range (0,20,1):
+    idade=int(input("Insira sua idade: "))
+    sexo= input("Digite o seu sexo(F-feminino|M-masculino): ")
+
+    if(sexo.upper=="F"):
+        qde_mulheres += 1
+
+    if ( idade >= 18 ) :
+        qde_maiores += 1
+
+    soma_idade += idade
+
+idade_media=idade/20
+
+print("A turma está lotada!")
+print(f"A media da idade dos alunos é de:{idade_media}")
+print(f"A quantidade de mulheres é:{qde_mulheres}")
+print(f"A quantidade de alunos maiores é:{qde_maiores}")
