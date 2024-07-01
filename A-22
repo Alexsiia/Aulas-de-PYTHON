@@ -1,0 +1,13 @@
+n1 = 0
+n2 = 0
+resultado = 0
+
+def somar_numeros_com_retorno_de_3_parametros(numero1, numero2):
+    resultado = numero1 + numero2
+    return numero1, numero2, resultado
+
+n1, n2, resultado = somar_numeros_com_retorno_de_3_parametros(3, 5)
+
+print(f"O 1° parametro foi {n1}")
+print(f"O 2° parametro foi {n2}")
+print(f"O resultado foi {resultado}")
